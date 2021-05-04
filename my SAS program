@@ -1,0 +1,36 @@
+# hello-world2
+My SAS Program
+
+
+
+
+Data Github;
+input Pt_ID Name$ Sex$ Diagnosis$ Duration_of_Stay ;
+cards ;
+001 Muhsin M OCD 5
+002 Raju M Asthma 0
+003 Avinash M Asthma 2
+004 Rakshai M COPD 3
+005 Monica F Fever 4
+006 Sneha F Diabetes 2
+007 Justy F GE 2 
+008 Jonsy F GE 3
+;
+
+proc freq data=Github;
+
+table Sex Diagnosis;
+
+
+
+Proc print;
+run;
+
+
+
+
+
+
+
+
+
